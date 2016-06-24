@@ -41,7 +41,8 @@ define([
             name: 'Respberry App',
             session: {},
             tabs: [
-                {icon: 'fa-tachometer', state: 'Home', label: 'Dashboards'}
+                {icon: 'fa-tachometer', state: 'index', label: 'Dashboards'},
+                {icon: 'fa-tachometer', state: 'temperature', label: 'Temperature'}
             ]
         };
 

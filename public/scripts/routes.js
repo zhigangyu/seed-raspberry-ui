@@ -35,9 +35,10 @@ define(['angular', 'angular-ui-router'], function(angular) {
                 templateUrl: 'views/index.html',
                 controller: 'IndexCtrl'
             })
-            .state('blankpage', {
-                url: '/blankpage',
-                templateUrl: 'views/blank-page.html'
+            .state('temperature', {
+                url: '/temperature',
+                controller: 'TemperatureCtrl',
+                templateUrl: 'views/temperature.html'
             })
             .state('blanksubpage', {
                 url: '/blanksubpage',

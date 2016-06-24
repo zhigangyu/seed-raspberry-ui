@@ -24,7 +24,7 @@ define(['angular', './px-module'], function(angular, sampleModule) {
             });
             console.log('currentPage = ' + $scope.paginationConf.currentPage);
 
-            $http.post('/api/ms/pi/quality', postData).success(function(data){
+            $http.post('/api/ms/pi/dht', postData).success(function(data){
                 $scope.paginationConf.totalItems = data.total;
                 $scope.items = data.items;
             });

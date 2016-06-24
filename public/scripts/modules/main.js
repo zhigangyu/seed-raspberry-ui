@@ -1,4 +1,4 @@
 define(['./px-module', './px-filter', './predix-user-service',
-'./index-controller'], function() {
+'./index-controller','./temperature-controller'], function() {
 
 });

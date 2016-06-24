@@ -34,7 +34,8 @@
     "require-css": "0.1.1",
     "requirejs": "https://github.com/jrburke/requirejs.git#2.1.18",
     "requirejs-plugins": "1.0.2",
-    "px-rangepicker": "https://github.com/PredixDev/px-rangepicker.git#^0.2.1"
+    "px-rangepicker": "https://github.com/PredixDev/px-rangepicker.git#^0.2.1",
+    "px-chart": "https://github.com/PredixDev/px-chart.git#^1.5.3"
   },
   "resolutions": {
     "es6-promise": "~v3.0.2",

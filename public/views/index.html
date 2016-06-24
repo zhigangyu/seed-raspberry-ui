@@ -168,7 +168,7 @@ table.gridtable td {
 
 </style>
 
-<px-card icon="fa-suitcase" header-text="CC Respberry" chevron>
+<px-card icon="fa-suitcase" header-text="Air Quality" chevron>
 <div style="position: relative;">
 <px-rangepicker class="float--left" id="rangepicker" allow-future-dates="true"></px-rangepicker>
 </div>
@@ -176,16 +176,14 @@ table.gridtable td {
 <table class="gridtable">
 <tr>
 	<th>DateTime</th>
-	<th>Value</th>
-	<th>Quality</th>
+	<th>Temperature</th>
+	<th>Humidity</th>
 </tr>
 <tr ng-repeat="item in items">
 	<td>{{ item.datetime }}</td>
-	<td>{{ item.value }}</td>
-	<td align="center">
-		<img ng-src="images/yellow.gif" ng-if="item.quality == 2">
-        <img ng-src="images/red.gif" ng-if="item.quality == 1">
-        <img src="images/green.gif" ng-if="item.quality == 3">
+	<td>{{ item.temperature }}</td>
+	<td>
+{{ item.humidity }}
 	</td>
 </tr>
 </table>

@@ -1,0 +1,16 @@
+
+
+<px-card icon="fa-suitcase" header-text="Temperature/Humidity" chevron>
+
+     <px-chart tooltip-type="condensed" series-events-width="1" zoom-type="xy" zoom-controls="hidecontrols">
+    <px-chart-controls data-controls show-date-range="true" display-options='{ "displayType": "normal","submitButtonText": "Update", "submitButtonIcon": "icon-arrow-right" }'></px-chart-controls>
+    <px-chart-yaxis title='{"text": "Left Axis"}' id="firstAxis" offset="0"></px-chart-yaxis>
+    <px-chart-series-line id="Temperature" axis-id="firstAxis" upper-threshold="30.5" lower-threshold="6.25" units="°C" data="{{data}}">
+    </px-chart-series-line>
+
+    <px-chart-series-line id="Humidity" axis-id="firstAxis" upper-threshold="60.5" lower-threshold="6.25" units="%" data="{{hmddata}}">
+    </px-chart-series-line>
+
+  </px-chart>
+
+</px-card>
